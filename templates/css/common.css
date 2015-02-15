@@ -1,0 +1,430 @@
+/* === Fonts === */
+
+@font-face {
+	font-family: Startup-Heavy;
+	src: url('/fonts/StartupText.ttf');
+}
+
+@font-face {
+	font-family: Startup-Initials;
+	src: url('/fonts/StartupInitials.ttf');
+}
+
+/* === for downloadable svg === */
+@font-face {
+	font-family: StartupText;
+	src: url('/fonts/StartupText.ttf');
+}
+
+@font-face {
+	font-family: StartupInitials;
+	src: url('/fonts/StartupInitials.ttf');
+}
+/* === */
+
+@font-face {
+	font-family: 'ProximaNova-Light';
+	src: url('/fonts/16BA2B_13.eot');
+	src: url('/fonts/16BA2B_13.eot?#iefix') format('embedded-opentype'),url('/fonts/16BA2B_13.woff') format('woff'),url('/fonts/16BA2B_13.ttf') format('truetype'),url('/fonts/16BA2B_13.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'ProximaNova-Regular';
+	src: url('/fonts/16BA2B_10.eot');
+	src: url('/fonts/16BA2B_10.eot?#iefix') format('embedded-opentype'),url('/fonts/16BA2B_10.woff') format('woff'),url('/fonts/16BA2B_10.ttf') format('truetype'),url('/fonts/16BA2B_10.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'ProximaNova-Semibold';
+	src: url('/fonts/16BA2B_11.eot');
+	src: url('/fonts/16BA2B_11.eot?#iefix') format('embedded-opentype'),url('/fonts/16BA2B_11.woff') format('woff'),url('/fonts/16BA2B_11.ttf') format('truetype'),url('/fonts/16BA2B_11.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'ProximaNova-Bold';
+	src: url('/fonts/16BA2B_14.eot');
+	src: url('/fonts/16BA2B_14.eot?#iefix') format('embedded-opentype'),url('/fonts/16BA2B_14.woff') format('woff'),url('/fonts/16BA2B_14.ttf') format('truetype'),url('/fonts/16BA2B_14.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'ProximaNovaA-RegularIt';
+	src: url('/fonts/20616E_0_0.eot');
+	src: url('/fonts/20616E_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/20616E_0_0.woff') format('woff'),url('/fonts/20616E_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ProximaNovaS-RegularIt';
+	src: url('/fonts/20616E_1_0.eot');
+	src: url('/fonts/20616E_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/20616E_1_0.woff') format('woff'),url('/fonts/20616E_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ProximaNova-RegularIt';
+	src: url('/fonts/20616E_2_0.eot');
+	src: url('/fonts/20616E_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/20616E_2_0.woff') format('woff'),url('/fonts/20616E_2_0.ttf') format('truetype');
+}
+
+
+/* === Common === */
+
+/*html {
+	background-color: #222222;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=");
+    background-repeat: repeat;
+}*/
+
+html {
+	font-family: ProximaNova-Regular !important;
+}
+
+body {
+	font-family: ProximaNova-Regular !important;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.clear {
+	clear:both;
+}
+
+b, strong {
+	font-family: ProximaNova-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+
+i, em {
+	font-family: ProximaNova-RegularIt;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.dimmed {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.dimmed:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+.center {
+	margin: 0 auto;
+	width: 990px;
+	height: 100%;
+}
+
+.menu {
+	display: inline;
+	padding: 0;
+}
+
+.menu li {
+	list-style: none;
+	display: inline;
+}
+
+.menu a {
+	padding: 0;
+	text-decoration: none;
+}
+
+::-moz-selection {
+	background: {{{Primary}}};
+}
+::selection {
+	background: {{{Primary}}};
+}
+
+a:link, a:active, a:visited, a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+	color: {{{Primary}}};
+}
+
+/* === Forms === */
+
+form label:after {
+	content: ":";
+}
+
+form input[type=checkbox] + label:after {
+	content: "";
+}
+
+form label {
+	display: block;
+	margin-right: 2em;
+}
+
+form input[type=checkbox] + label {
+	display: inline;
+}
+
+form input[type=checkbox] {
+	margin-right: 0.33em;
+}
+
+form > div,
+form > table {
+	margin-bottom: 10px;
+}
+
+form table > caption {
+	text-align: left;
+	font-weight: bold;
+}
+
+form table td,
+form table th {
+	text-align: left;
+	font-weight: normal;
+	vertical-align:bottom;
+}
+
+form table th div.table-actions {
+	width:80px;
+}
+
+form .required {
+	color: red;
+}
+
+form .error {
+	display: block;
+	padding: 5px;
+	margin: 5px 0;
+	color: white;
+	background-color: red;
+}
+
+form .success {
+	display: block;
+	padding: 5px;
+	margin: 5px 0;
+	color: white;
+	background-color: green;
+}
+
+/* === Amiando Forms === */
+
+.amiando-label {
+	width: 150px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 5px 0;
+}
+
+/* === LabledModelView === */
+
+.labeled-model-view-label {
+	font-weight: bold;
+	display: block;
+	margin-top: 10px;
+}
+
+.labeled-model-view-label:after {
+	content: ":";
+}
+
+.labeled-model-view-value {
+	display: block;
+}
+
+
+
+/*
+.hover-visible {
+	display: none;
+}
+
+.hover-visible:hover {
+	display: inherit;
+}
+
+.hover-invisible:hover {
+	display: none;
+}
+*/
+
+/* === Media Lib === */
+
+.media-image-editor {
+	margin-top: 20px;
+	border-top: 1px solid black;
+}
+
+.media-image-editor .thumbnail-frame {
+	float: left;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+
+.media-image-editor form {
+	display: inline;
+	margin-right: 10px;
+}
+
+.media-image-editor p {
+	margin-bottom: 10px;
+}
+
+.media-imageref-editor {
+	margin-top: 5px;
+}
+
+.media-imageref-editor .thumbnail-frame {
+	float: left;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+
+
+
+/* === Button === */
+
+.button {
+	{{#SecondaryButton}}
+	{{#Button}}
+	font-size: 14px;
+	line-height: 14px;
+	text-decoration: none;
+	color: white;
+	padding: 5px 9px;
+
+	text-shadow: #cacaca 0 -1px 0px;
+
+	border-radius: 3px;
+
+	border: 1px solid {{{Border}}};
+	box-shadow: 1px 1px 4px #cacaca, inset 0 1px 0 {{{InnerShadow}}};
+
+	/* http://www.colorzilla.com/gradient-editor/ */
+	background: {{{Top}}}; /* Old browsers */
+	background: -moz-linear-gradient(top, {{{Top}}} 0%, {{{Bottom}}} 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,{{{Top}}}), color-stop(100%,{{{Bottom}}})); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{{Top}}}', endColorstr='{{{Bottom}}}',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* W3C */
+	{{/Button}}
+	{{/SecondaryButton}}
+}
+
+a.button:hover, a.button:active, a.button.focus, a.button:visited, a.button:link  {
+	text-decoration: none;
+	color: white;
+}
+
+.button:hover, .button:focus {
+	{{#SecondaryButton}}
+	{{#HoverButton}}
+	border: 1px solid {{{Border}}};
+	box-shadow: 1px 1px 4px #cacaca, inset 0 1px 0 {{{InnerShadow}}};
+
+	background: {{{Top}}}; /* Old browsers */
+	background: -moz-linear-gradient(top, {{{Top}}} 0%, {{{Bottom}}} 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,{{{Top}}}), color-stop(100%,{{{Bottom}}})); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{{Top}}}', endColorstr='{{{Bottom}}}',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* W3C */
+	{{/HoverButton}}
+	{{/SecondaryButton}}
+}
+
+.delete-button {
+	{{#SecondaryButton}}
+	{{#Button}}
+	font-size: 12px;
+	line-height: 12px;
+	text-decoration: none;
+	color: white;
+	padding: 6px 9px;
+
+	text-shadow: #cacaca 0 -1px 0px;
+
+	border-radius: 3px;
+
+	border: 1px solid #980000;
+	box-shadow: 1px 1px 4px #cacaca, inset 0 1px 0 #E00000
+
+	/* http://www.colorzilla.com/gradient-editor/ */
+	background: #D80000; /* Old browsers */
+	background: -moz-linear-gradient(top, #D80000 0%, #A80000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D80000), color-stop(100%,#A80000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #D80000 0%,#A80000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #D80000 0%,#A80000 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #D80000 0%,#A80000 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D80000', endColorstr='#A80000',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #D80000 0%,#A80000 100%); /* W3C */
+	{{/Button}}
+	{{/SecondaryButton}}
+}
+
+.delete-button:hover, .delete-button.focus {
+	{{#SecondaryButton}}
+	{{#HoverButton}}
+
+	/* http://www.colorzilla.com/gradient-editor/ */
+	background: #D80000; /* Old browsers */
+	
+	{{/HoverButton}}
+	{{/SecondaryButton}}
+}
+
+.button:active {
+	{{#SecondaryButton}}
+	{{#PressedButton}}
+	border: 1px solid {{{Border}}};
+	box-shadow: 1px 1px 4px #cacaca, inset 0 1px 0 {{{InnerShadow}}};
+
+	background: {{{Top}}}; /* Old browsers */
+	background: -moz-linear-gradient(top, {{{Top}}} 0%, {{{Bottom}}} 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,{{{Top}}}), color-stop(100%,{{{Bottom}}})); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{{Top}}}', endColorstr='{{{Bottom}}}',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* W3C */
+	{{/PressedButton}}
+	{{/SecondaryButton}}
+}
+
+input[disabled="disabled"].button, input[disabled].button {
+	{{#SecondaryButton}}
+	{{#DisabledButton}}
+	border: 1px solid {{{Border}}};
+	box-shadow: 1px 1px 4px #cacaca, inset 0 1px 0 {{{InnerShadow}}};
+
+	background: {{{Top}}}; /* Old browsers */
+	background: -moz-linear-gradient(top, {{{Top}}} 0%, {{{Bottom}}} 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,{{{Top}}}), color-stop(100%,{{{Bottom}}})); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{{Top}}}', endColorstr='{{{Bottom}}}',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, {{{Top}}} 0%,{{{Bottom}}} 100%); /* W3C */
+	{{/DisabledButton}}
+	{{/SecondaryButton}}
+}
+
+/* === Todo Items === */
+.todo-done {
+	color:gray;
+	text-decoration:line-through;
+}
+.todo-next {
+	color:{{{Secondary}}};
+}
+
+.wysiwyg-color-primary {
+	color:{{{Primary}}};
+}
+
+.wysiwyg-color-secondary {
+	color:{{{Secondary}}};
+}

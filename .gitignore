@@ -1,0 +1,47 @@
+#############################
+# Config file should be private:
+
+config.json
+
+#############################
+# Binary:
+
+startuplive.in
+
+#############################
+# OS generated files:
+
+.DS_Store
+Icon?
+Thumbs.db
+
+#############################
+# Dropbox:
+
+.dropbox
+
+#############################
+# Temp editor files:
+
+.swp
+
+#############################
+# Go specific files:
+
+/pkg
+bin/
+_obj
+_test
+*.[568vq]
+[568vq].out
+*.o
+*.a
+*.so
+*.exe
+
+#############################
+# Other files:
+
+log.txt
+nohup.out
+

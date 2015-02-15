@@ -1,0 +1,2 @@
+go build -gcflags "-N -l"
+gdb startuplive.in -d $GOPATH
